@@ -56,7 +56,9 @@
       <artifactId>mockito-junit-jupiter</artifactId>
       <version>${mockito.version}</version>
     </dependency>
+    
   </dependencies>
+         
 
   <build>
     <plugins>
@@ -171,6 +173,14 @@
           </execution>
         </executions>
       </plugin>
+             <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-checkstyle-plugin</artifactId>
+            <version>3.0.0</version>
+            <configuration>
+                <configLocation>checkstyle.xml</configLocation>
+            </configuration>
+        </plugin>
 
     </plugins>
   </build>
